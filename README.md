@@ -63,6 +63,40 @@ The results are almost completely identical with the estimation in R.
 For comparison, try the Demo.R file (as included in folder) that
 gives the same output as the demo examples below. See for yourself.
 
+**Example usage:**
+
+    mdl = GLM;
+    mdl.Distribution = 'gamma';
+    mdl.Link = 'log';
+    mdl.Estimate(Y,X);
+    
+**Example output:**
+
+    :: convergence in 4 iterations
+    ------------------------------------------------------------------------------------------
+       dependent: MilesPerGallon
+     independent: (Intercept),Horsepower,Acceleration,Cylinders
+    ------------------------------------------------------------------------------------------
+     log(E[MilesPerGallon]) = ß1×(Intercept) + ß2×Horsepower + ß3×Acceleration + ß4×Cylinders
+    ------------------------------------------------------------------------------------------
+    distribution: GAMMA
+            link: LOG
+          weight: -
+          offset: -
+    ============================================================
+        Variable    Estimate     S.E.    z-value    Pr(>|z|)
+    ============================================================
+      (Intercept)      4.955     0.510    9.708 	 0.00000
+       Horsepower     -0.018     0.004   -4.042 	 0.00005
+     Acceleration     -0.026     0.016   -1.680 	 0.09290
+        Cylinders      0.093     0.055    1.711 	 0.08706
+    ============================================================
+     Residual deviance:     0.0933     Deviance MSE: 0.0085
+     Null deviance:         0.3888     Pearson MSE:  0.0088
+     Dispersion:            0.0133     Deviance IC:  0.1026
+     McFadden R^2:          0.7601     Residual df:  7.0000
+    ============================================================
+
 ---
 ***NEVERTHELESS: this code is still relatively unstable.***
 ---
