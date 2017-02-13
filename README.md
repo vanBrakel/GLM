@@ -1,4 +1,4 @@
-# Generalized Linear Model estimation in Matlab (same results as R)
+# Generalized Linear Models in Matlab (same results as in R)
 
 ---
 
