@@ -9,7 +9,7 @@ And one of the following (if compatible) link functions:
  > 'id' / 'log' / 'sqroot' / 'power' / 'logit' / 'probit' / 'recip' / 'complog'
 
 Estimation procedure has been copied and modified from the package:
-[GLMLAB by Peter Dunn (08 Mar 1999)](www.mathworks.com/matlabcentral/fileexchange/195-glmlab)
+[GLMLAB by Peter Dunn (08 Mar 1999)](http://www.mathworks.com/matlabcentral/fileexchange/195-glmlab)
 
 This GLM package is essentially the same as Peter Dunn's, but does not
 recquire the usage of the GLMLAB GUI and outputs results like in R.
