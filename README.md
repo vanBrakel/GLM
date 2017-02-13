@@ -32,7 +32,7 @@ Some key notes for usage:
   As with `X` and `Y`, the variables inside the struct should be `N x 1`.
 - When using the binomial distribution, `Y` should contain a variable
   with two columns: (column 1) the responses, (column 2) the sample size
-  per response. If you don't have sample sizes, simply make columns 2
+  per response. If you don't have sample sizes, simply make column 2
   a vector of only ones.
 
 ---
@@ -61,7 +61,7 @@ After estimation, it is also possible to fit new values to the estimated model a
 
 The results are almost completely identical with the estimation in R.
 For comparison, try the Demo.R file (as included in folder) that
-gives the same output as the demo examples below. See for yourself.
+gives the same output as the Matlab demo examples. See for yourself.
 
 **Example usage:**
 
