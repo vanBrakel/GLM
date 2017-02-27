@@ -24,7 +24,7 @@ classdef GLM < handle
     %   >> mdl.Distribution = 'gamma';
     %   >> mdl.Link = 'log';
     %   >> disp(mdl);
-    %   >> mdl.Estimate(Y,X);
+    %   >> mdl.Estimate(X,Y);
     
     properties
         Distribution    = 'normal';

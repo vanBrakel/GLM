@@ -205,7 +205,7 @@ if ~isempty(devlist),               %if empty, an error
         else
           fprintf('  Dispersion:         %9.4f     Deviance IC:  %-5.4f\n',dispers,DIC);
         end;
-        fprintf('  McFadden R^2:       %9.4f     Residual df:  %-5.4f\n',McFaddenR2,curdf);
+        fprintf('  McFadden R^2:       %9.4f     Residual df:  %-5.0f\n',McFaddenR2,curdf);
         
         disp(line);
         disp(' ');
