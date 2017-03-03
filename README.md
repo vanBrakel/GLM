@@ -94,7 +94,7 @@ gives the same output as the Matlab demo examples. See for yourself.
      Residual deviance:     0.0933     Deviance MSE: 0.0085
      Null deviance:         0.3888     Pearson MSE:  0.0088
      Dispersion:            0.0133     Deviance IC:  0.1026
-     McFadden R^2:          0.7601     Residual df:  7.0000
+     McFadden R^2:          0.7601     Residual df:  7
     ============================================================
 
 ---
