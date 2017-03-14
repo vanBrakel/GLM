@@ -146,7 +146,7 @@ if ~isempty(devlist),               %if empty, an error
         disp(line);
 
         for k = 1:size(x,2)
-            name = obj.Xlabel{1,k};
+            name = obj.Xlabel{1,k}(1:min(12,end));
             se = sqrt(covarbeta(k,k));
             zval = beta(k)/se;
             pval = 2*(1-cdfnorm(abs(zval),0,1));
@@ -172,15 +172,10 @@ if ~isempty(devlist),               %if empty, an error
        sdev = curdev/obj.Scale; 
     end;
     
-    % Calculate saturated model.
-    xsat = ones(ylen,ylen);
-    for d=1:ylen
-        xsat(d,d) = 0;
-    end
-    
+    % Calculate null model
     [~,~,~,iclist,~,~] = irls(obj,y,ones(ylen,1),w,m,o,false);
     nullDeviance = iclist(end);
-    
+
     % Calculate other output.
     McFaddenR2 = 1 - curdev/nullDeviance;
     MSE_deviance = mean(findres(obj,y,m,mu,k,wvar,'deviance').^2);
