@@ -98,11 +98,13 @@ gives the same output as the Matlab demo examples. See for yourself.
     ============================================================
 
 ---
-***NEVERTHELESS: this code is still relatively unstable.***
+***This code is still relatively unstable.***
 ---
+
 **This code has not been peer-reviewed** and may give wrong outputs.
 The internal estimation of GLM has been directly copied from Peter Dunn.
 There is no guarantee that this code is correct. Do not rely on it.
 Check with other applications (e.g. R) to verify the correctness.
+
 ---
 
