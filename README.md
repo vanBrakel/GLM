@@ -101,9 +101,9 @@ gives the same output as the Matlab demo examples. See for yourself.
 ***Disclaimer***
 ---
 
-**The internal estimation of GLM has been directly copied from Peter Dunn.
+***The internal estimation of GLM has been directly copied from Peter Dunn.
 There is no guarantee that this code is correct.
-Check with other applications (e.g. R) to verify the correctness.
+Check with other applications (e.g. R) to verify correctness.***
 
 ---
 
